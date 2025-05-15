@@ -182,7 +182,13 @@
                         </li>
                         <li><strong>temp_patient_id</strong> is the equivalent of <strong>Entity1_ID</strong>.</li>
                         </li>
-                        <li><strong>temp_encounter_id</strong> is equivalent to <strong>Entity2_ID</strong> or <strong>Entity3_ID</strong>, whichever is not null.</li>
+                        <li>
+                            <strong>temp_encounter_id</strong>
+                            <ul>
+                                <li>is equivalent to <strong>Entity2_ID</strong> if <strong>Entity1_ID</strong> is null.</li>
+                                <li>is equivalent to <strong>Character "O" + Entity1_ID</strong> if <strong>Entity2_ID</strong> is null.</li>
+                            </ul>
+                        </li          
                         </li>
                         <li><strong>temp_patient_id</strong> has <strong>282,484 distinct patient IDs</strong>.</li>
                         </li>
