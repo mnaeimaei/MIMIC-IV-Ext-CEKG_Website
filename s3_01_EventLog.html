@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,7 +73,7 @@
 
             <ul>
                 <li><strong style="color:blue;">Event_ID:</strong> Contains the ID of each event. There are a total of
-                    <strong>21,577,735 events</strong>.
+                    <strong>121,600,880 events</strong>.
                 </li>
                 <li><strong style="color:blue;">Timestamp:</strong> Contains the time and date of activities.</li>
                 <li><strong style="color:blue;">Activity:</strong> Consists of the activity label of the event. There
@@ -143,7 +144,7 @@
                         <li>All values for <strong style="color:black;">Entity3_origin</strong> are
                             <strong>Outpatient</strong>.
                         </li>
-                        <li><strong>Entity3_ID</strong> has <strong>550,405 distinct IDs</strong> and includes nulls for
+                        <li><strong>Entity3_ID</strong> has <strong>561,575 distinct IDs</strong> and includes nulls for
                             admitted patients.
                         </li>
                     </ul>
@@ -155,7 +156,7 @@
                         <li>All values for <strong style="color:black;">Entity4_origin</strong> are
                             <strong>Admission_Sequence</strong>.
                         </li>
-                        <li><strong>Entity4_ID</strong> ranges from <strong>1</strong> to <strong>238</strong>, with
+                        <li><strong>Entity4_ID</strong> ranges from <strong>1</strong> to <strong>239</strong>, with
                             nulls
                             for outpatient-only patients.
                         </li>
@@ -167,13 +168,13 @@
                     <ul>
                         <li>All values for <strong style="color:black;">Entity5_origin</strong> are <strong>Outpatient_Sequence</strong>.
                         </li>
-                        <li><strong>Entity5_ID</strong> ranges from <strong>1</strong> to <strong>114</strong>, with
+                        <li><strong>Entity5_ID</strong> ranges from <strong>1</strong> to <strong>184</strong>, with
                             nulls
                             for admitted patients.
                         </li>
                     </ul>
                 </li>
-                <li><strong style="color:blue;">temp_patient_id</strong> and <strong
+<li><strong style="color:blue;">temp_patient_id</strong> and <strong
                         style="color:blue;">temp_encounter_id:</strong> These are helper columns for subset analysis,
                     such
                     as after clustering.
@@ -185,14 +186,14 @@
                         <li>
                             <strong>temp_encounter_id</strong>
                             <ul>
-                                <li>is equivalent to <strong>Entity2_ID</strong> if <strong>Entity1_ID</strong> is null.</li>
-                                <li>is equivalent to <strong>Character "O" + Entity1_ID</strong> if <strong>Entity2_ID</strong> is null.</li>
+                                <li>is equivalent to <strong>Entity2_ID</strong> if <strong>Entity3_ID</strong> is null.</li>
+                                <li>is equivalent to <strong>Character "O" + Entity3_ID</strong> if <strong>Entity2_ID</strong> is null.</li>
                             </ul>
                         </li          
                         </li>
                         <li><strong>temp_patient_id</strong> has <strong>282,484 distinct patient IDs</strong>.</li>
                         </li>
-                        <li><strong>temp_encounter_id</strong> has <strong>999,112 distinct patient IDs</strong>.</li>
+                        <li><strong>temp_encounter_id</strong> has <strong>1,010,282 distinct patient IDs</strong>.</li>
                     </ul>
                 </li>
             </ul>
